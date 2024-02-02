@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LinearGradient } from "react-text-gradients";
 
 export default function Navbar() {
@@ -7,6 +8,7 @@ export default function Navbar() {
       style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
     >
       <div className="flex items-center justify-between py-3 px-8 w-full glow-blue">
+        <Link href="/" legacyBehavior>
         <a
           aria-current="page"
           href="/"
@@ -24,6 +26,7 @@ export default function Navbar() {
         </LinearGradient>
           </span>
         </a>
+        </Link>
         <div className="flex items-center">
           
         </div>

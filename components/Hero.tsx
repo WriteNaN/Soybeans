@@ -1,4 +1,5 @@
 import Navbar from "@/components/Home/Navbar";
+import Link from "next/link";
 import { LinearGradient, RadialGradient } from "react-text-gradients";
 import { TypeAnimation } from "react-type-animation";
 
@@ -47,6 +48,7 @@ export default function Hero() {
                   />
                 </p>
                 <div className="flex sm:flex-row flex-col sm:items-center items-start gap-5 mt-5">
+                  <Link href="/links/buy-soybeans" legacyBehavior>
                   <a
                     className="sm:w-max w-full"
                     href="/links/buy-soybeans"
@@ -83,6 +85,8 @@ export default function Hero() {
                       </svg>
                     </button>
                   </a>
+                  </Link>
+                  <Link href="/app" legacyBehavior>
                   <a href="/app" className="sm:w-max w-full">
                     <button
                       type="button"
@@ -114,6 +118,7 @@ export default function Hero() {
                       </svg>
                     </button>
                   </a>
+                  </Link>
                 </div>
               </div>
               <img

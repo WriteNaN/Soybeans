@@ -2,6 +2,7 @@ import Head from "next/head";
 import Starfield from "./Starfield";
 import { FaXTwitter as FaTwitter, FaDiscord, FaGithub } from "react-icons/fa6";
 import { LinearGradient, RadialGradient } from "react-text-gradients";
+import Link from "next/link";
 
 export default function Loading() {
   return (
@@ -26,6 +27,7 @@ export default function Loading() {
 
       <div className="absolute bottom-4 right-4">
         <footer className="flex items-center text-white">
+          <Link href="https://twitter.com/<edit this>" legacyBehavior>
           <a
             href="https://twitter.com/<edit this>"
             target="_blank"
@@ -34,6 +36,8 @@ export default function Loading() {
           >
             <FaTwitter size={16} />
           </a>
+          </Link>
+          <Link href="<edit this>" legacyBehavior>
           <a
             href="https://discord.com/<customize link>"
             target="_blank"
@@ -42,6 +46,8 @@ export default function Loading() {
           >
             <FaDiscord size={16} />
           </a>
+          </Link>
+          <Link href='https://github.com/<project github>' legacyBehavior>
           <a
             href="https://github.com/<project github>"
             target="_blank"
@@ -50,6 +56,7 @@ export default function Loading() {
           >
             <FaGithub size={16} />
           </a>
+          </Link>
         </footer>
       </div>
     </div>
