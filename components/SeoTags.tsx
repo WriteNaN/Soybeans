@@ -1,6 +1,8 @@
+import Head from "next/head";
+
 export default function SeoTags() {
   return (
-    <>
+    <Head>
       <meta name="title" content="Soybeans Finance - $BEAN" />
       <meta
         name="description"
@@ -32,6 +34,6 @@ export default function SeoTags() {
         property="og:image"
         content="https://soybeans.vercel.app/favicon.png"
       />
-    </>
+    </ Head>
   );
 }

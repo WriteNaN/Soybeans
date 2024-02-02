@@ -18,8 +18,9 @@ export default function Home() {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <SeoTags />
         </Head>
+
+        <SeoTags />
 
         <div id="app" className="mount-in-right" data-v-app>
           <Hero />
