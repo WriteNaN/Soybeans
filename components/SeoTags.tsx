@@ -3,6 +3,8 @@ import Head from "next/head";
 export default function SeoTags() {
   return (
     <Head>
+      <link rel="icon" type="image/png" href="/favicon.png" />
+      <meta charSet="utf-8" />
       <meta name="title" content="Soybeans Finance - $BEAN" />
       <meta
         name="description"
@@ -13,7 +15,7 @@ export default function SeoTags() {
         content="solana, defi, yield farming, crypto, web3, bean, soybeans, volatility farming"
       />
       <meta name="robots" content="index, follow" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English" />
       <meta name="twitter:title" content="Soybeans Finance - $BEAN" />
       <meta
@@ -34,6 +36,6 @@ export default function SeoTags() {
         property="og:image"
         content="https://soybeans.vercel.app/favicon.png"
       />
-    </ Head>
+    </Head>
   );
 }
