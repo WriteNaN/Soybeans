@@ -4,6 +4,7 @@ import { GiSpellBook } from "react-icons/gi";
 import { toast, Toaster } from "react-hot-toast";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { IoLogOut } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
 import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
 
@@ -67,13 +68,20 @@ export default function Navbar() {
               <span className="text-sm manrope"></span>
             </button>
           ) : (
-            <button
-              className="flex items-center text-white mx-4 px-4 py-2 rounded-lg"
-              onClick={() => disconnect()}
-            >
-              <IoLogOut size={24} className="hover:opacity-50" />
-              <span className="text-sm manrope"></span>
-            </button>
+            <div className="flex flex-column">
+              <button className="flex items-center text-white p-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:opacity-80">
+                <CgProfile size={24} />
+              </button>
+              <button
+                className="flex items-center text-white mx-4 p-2 rounded-lg bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-80 sm:mx-2"
+                onClick={() => disconnect()}
+              >
+                <IoLogOut size={24} />
+                <span className="hidden sm:inline-block text-sm manrope ml-2">
+                  Logout
+                </span>
+              </button>
+            </div>
           )}
           <div className="flex items-center space-x-4"></div>
         </div>

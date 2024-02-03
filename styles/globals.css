@@ -90,3 +90,11 @@ body {
 .glow-white {
   filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
 }
+
+.glow-green {
+  filter: drop-shadow(0 0 0.75rem rgb(5, 241, 25));
+}
+
+.glow-red {
+  filter: drop-shadow(0 0 0.75rem rgb(241, 5, 5));
+}

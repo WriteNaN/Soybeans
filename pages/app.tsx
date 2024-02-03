@@ -47,7 +47,7 @@ export default function App() {
                         width={1000}
                         height={1000}
                         alt="solana-x"
-                        src="/img/solana/globe.webp"
+                        src="/img/solana/contract.webp"
                         className="w-full h-full object-cover glow-blue floating-2 rounded-md"
                       />
                     </div>
