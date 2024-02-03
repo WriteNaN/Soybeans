@@ -35,7 +35,7 @@ export default function Provider({ children }: { children: any }) {
   );
   return (
     <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect>
+      <WalletProvider wallets={wallets} autoConnect={true}>
         {children}
       </WalletProvider>
     </ConnectionProvider>
