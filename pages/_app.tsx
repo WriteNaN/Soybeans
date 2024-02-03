@@ -7,7 +7,7 @@ import "@/styles/fonts.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <div suppressHydrationWarning>
       <SeoTags />
       <Component {...pageProps} />
     </div>

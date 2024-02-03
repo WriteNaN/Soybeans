@@ -70,6 +70,13 @@ body {
   margin-top: 5px;
 }
 
+.floating-2 {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes floating {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
@@ -78,4 +85,8 @@ body {
 
 .glow-blue {
   filter: drop-shadow(0 0 0.75rem rgb(0, 195, 255));
+}
+
+.glow-white {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
 }

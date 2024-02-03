@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="absolute top-0 w-full z-20 border-none"
+      className="relative top-0 w-full z-20 border-none"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
     >
       <div className="flex items-center justify-between py-3 px-8 w-full glow-blue">
