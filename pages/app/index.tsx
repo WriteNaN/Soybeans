@@ -12,15 +12,20 @@ import Footer from "@/components/Dashboard/Footer";
 import Provider from "@/context/Provider";
 import { LinearGradient, RadialGradient } from "react-text-gradients";
 import Starfield from "@/components/StarfieldX";
-import { useWallet, useConnection } from "@solana/wallet-adapter-react";
-import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
 import Dashboard from "@/components/Dashboard";
+import Account from "@/components/Account";
 
 export default function App() {
   const [isConnected, setConnected] = useLocalStorageState("isConnected", {
     defaultValue: false,
   });
+  const [isAccountScreen, setAccountScreen] = useLocalStorageState(
+    "current-view",
+    {
+      defaultValue: false,
+    }
+  );
 
   return (
     <div className={`flex flex-col overflow-hidden ${styles["dashboard"]}`}>
@@ -35,9 +40,9 @@ export default function App() {
         </Head>
 
         <WalletModalProvider>
-          <div>
+          <div className="!w-full !h-full">
             <Navbar />
-            { !isConnected ? (
+            {!isConnected ? (
               <>
                 <Starfield />
                 <div className="flex items-center justify-center h-screen select-none">
@@ -75,7 +80,7 @@ export default function App() {
                 </div>
               </>
             ) : (
-              <Dashboard />
+              <div>{isAccountScreen ? <Account /> : <Dashboard />}</div>
             )}
           </div>
         </WalletModalProvider>

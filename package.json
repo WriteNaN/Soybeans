@@ -1,5 +1,5 @@
 {
-  "name": "dev",
+  "name": "soybeans",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -34,6 +34,7 @@
     "@types/react-dom": "^18",
     "@types/react-transition-group": "^4.4.10",
     "autoprefixer": "^10.0.1",
+    "daisyui": "^4.6.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",

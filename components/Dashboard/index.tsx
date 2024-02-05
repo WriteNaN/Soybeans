@@ -21,34 +21,40 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <div className="manrope">
-      <div
-        className="livecoinwatch-widget-5 glow-blue"
-        lcw-base="USD"
-        lcw-color-tx="#0693e3"
-        lcw-marquee-1="coins"
-        lcw-marquee-2="movers"
-        lcw-marquee-items="10"
-        lcw-platform="SOL"
-      ></div>
+    <div className="manrope select-none">
+        <>
+          <div
+            className="livecoinwatch-widget-5 glow-blue"
+            lcw-base="USD"
+            lcw-color-tx="#0693e3"
+            lcw-marquee-1="coins"
+            lcw-marquee-2="movers"
+            lcw-marquee-items="10"
+            lcw-platform="SOL"
+          ></div>
 
-      <div className="pt-4">
-        <h1 className="align-center justify-center flex w-screen text-4xl p-5">
-            <RadialGradient gradient={['skyblue', 'pink']} className="audiowide glow-blue">
+          <div className="pt-4 select-none">
+            <h1 className="align-center justify-center flex w-screen text-4xl p-5">
+              <RadialGradient
+                gradient={["skyblue", "pink"]}
+                className="audiowide glow-blue"
+              >
                 OVERVIEW
-                </RadialGradient>
-        </h1>
-        <Overview />
-      </div>
-      {/**  */}
+              </RadialGradient>
+            </h1>
+            <Overview />
 
+            <div></div>
+          </div>
+          {/**  */}
 
-      <div className="flex justify-end items-end absolute bottom-14 right-4">
-  <button className="flex items-center text-white p-2 rounded-lg bg-gradient-to-r from-green-500 to-green-500 hover:opacity-80 glow-green">
-    <IoCreate />
-  </button>
-</div>
-{/** */}
+          <div className="flex justify-end items-end absolute bottom-14 right-4">
+            <button className="flex items-center text-white p-2 rounded-lg bg-gradient-to-r from-green-500 to-green-500 hover:opacity-80 glow-green">
+              <IoCreate />
+            </button>
+          </div>
+        </>
+      {/** */}
     </div>
   );
 }
