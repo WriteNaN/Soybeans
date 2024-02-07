@@ -48,7 +48,7 @@ export default function Dashboard() {
           </div>
           {/**  */}
 
-          <div className="flex justify-end items-end absolute bottom-14 right-4">
+          <div className="flex justify-end items-end fixed bottom-14 right-4">
             <button className="flex items-center text-white p-2 rounded-lg bg-gradient-to-r from-green-500 to-green-500 hover:opacity-80 glow-green">
               <IoCreate />
             </button>
